@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1{
+            color: blueviolet;
+        }
+
+        @media screen and (max-width:500px) {
+            
+            h1{
+                display: none;
+                color: cadetblue;
+            }
+            
+        }
+
+        /*  Midia Query mim-width*/
+        
+        p{
+            background-color: lightgreen;
+            color: gray
+        }
+
+        @media screen and (min-width:800px) {
+
+            p{
+                background-color: lightcoral;
+                color: darkcyan;
+            }
+            
+        }
+
+        /*Landscap*/
+        h3{
+            display: none ;
+        }
+
+        @media screen and (orientation: landscape) {
+            h3{
+                display: block;
+            }
+        }
+    
+       
+
+    </style>
+</head>
+<body>
+    <!--Midia Query-->
+    <h1>Mude a cor pelo tamanho da tela</h1>
+    <!--Min-Width-->
+    <p>Midia Query Funcionando ao Contrario</p>
+
+    <!--LandScap-->
+    <h3>Visivel em LandScap</h3>
+</body>
+</html>
