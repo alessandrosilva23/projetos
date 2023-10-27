@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html,body{
+    margin: auto;
+    font-family: helvetica;
+}
+
+.header-container{
+    position: relative;
+    background-color: #16A7E8;
+    padding: 35px 35px;
+}
+.nav-container{
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+
+}
+.nav-container li{
+    display: inline-block;
+    padding: 0 50px 25px;
+    
+}
+.nav-container a{
+    text-decoration: none;
+    background-color: #16A7E8;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px black;
+    text-transform: uppercase;
+    transition: 1s;
+    text-shadow: 1px 1px 1px black;
+}
+
+.nav-container a:hover{
+    box-shadow: 1px 1px 14px black;
+    background-color: #46b4e7 ;
+    color: black;
+
+}
+
+.img-container{
+    background-image: url(css/image/paisagem-natural-ilha.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 250px;
+
+}
+.title-container h1{
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.title-container p{
+    text-align: center;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: white;
+    text-shadow:1px 1px 1px black ;
+}
+
+@media(max-width:1100px){
+    .header-container{
+        background-color: #1098E4;
+    }
+}
+
+@media(max-width:900px){
+    .header-container{
+        background-color: #0F87DD;
+    }
+    .nav-container a{
+        background-color: #0F87DD;
+    }
+}
+
+@media(max-width:653px ){
+
+        html,
+        body{
+            overflow: hidden;
+        }
+
+        .nav-container ul{
+            flex-direction: column;
+        }
+        .nav-container li {
+            display: contents;
+            font-size: 12px;
+            margin-left: 10px;
+            
+
+        }
+        
+
+        .title-container h1{
+
+            font-size: 1.9em;
+
+        }
+
+        .title-container p{
+
+            font-size: 1em;
+        }
+}
